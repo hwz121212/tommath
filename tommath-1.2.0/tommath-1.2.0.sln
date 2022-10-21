@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tommath", "thirdparty\tommath-1.2.0\tommath.vcxproj", "{FA79A258-D537-30EF-A5C7-4605D5551C21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{BCCF5747-A6FE-4A5D-92CF-A57D88629873}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_demo", "1_demo", "{E6E9C26B-9635-4850-857E-A3B4073DDD6C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-ltm", "demo\test-ltm\test-ltm.vcxproj", "{9AD90B92-38FE-3CB4-884F-517618FF164A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FA79A258-D537-30EF-A5C7-4605D5551C21} = {FA79A258-D537-30EF-A5C7-4605D5551C21}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mtest_opponent", "demo\test-ltm\mtest_opponent.vcxproj", "{4CEBBA18-A1B0-4A3E-B24A-B51B75748101}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FA79A258-D537-30EF-A5C7-4605D5551C21} = {FA79A258-D537-30EF-A5C7-4605D5551C21}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtommath", "thirdparty\tommath-1.2.0\libtommath.vcxproj", "{C781CE44-E421-4100-A5DE-26B7F9173E78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA79A258-D537-30EF-A5C7-4605D5551C21}.Debug|x64.ActiveCfg = Debug|x64
+		{FA79A258-D537-30EF-A5C7-4605D5551C21}.Debug|x64.Build.0 = Debug|x64
+		{FA79A258-D537-30EF-A5C7-4605D5551C21}.Release|x64.ActiveCfg = Release|x64
+		{FA79A258-D537-30EF-A5C7-4605D5551C21}.Release|x64.Build.0 = Release|x64
+		{9AD90B92-38FE-3CB4-884F-517618FF164A}.Debug|x64.ActiveCfg = Debug|x64
+		{9AD90B92-38FE-3CB4-884F-517618FF164A}.Debug|x64.Build.0 = Debug|x64
+		{9AD90B92-38FE-3CB4-884F-517618FF164A}.Release|x64.ActiveCfg = Release|x64
+		{9AD90B92-38FE-3CB4-884F-517618FF164A}.Release|x64.Build.0 = Release|x64
+		{4CEBBA18-A1B0-4A3E-B24A-B51B75748101}.Debug|x64.ActiveCfg = Debug|x64
+		{4CEBBA18-A1B0-4A3E-B24A-B51B75748101}.Debug|x64.Build.0 = Debug|x64
+		{4CEBBA18-A1B0-4A3E-B24A-B51B75748101}.Release|x64.ActiveCfg = Release|x64
+		{4CEBBA18-A1B0-4A3E-B24A-B51B75748101}.Release|x64.Build.0 = Release|x64
+		{C781CE44-E421-4100-A5DE-26B7F9173E78}.Debug|x64.ActiveCfg = Debug|x64
+		{C781CE44-E421-4100-A5DE-26B7F9173E78}.Debug|x64.Build.0 = Debug|x64
+		{C781CE44-E421-4100-A5DE-26B7F9173E78}.Release|x64.ActiveCfg = Release|x64
+		{C781CE44-E421-4100-A5DE-26B7F9173E78}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA79A258-D537-30EF-A5C7-4605D5551C21} = {BCCF5747-A6FE-4A5D-92CF-A57D88629873}
+		{9AD90B92-38FE-3CB4-884F-517618FF164A} = {E6E9C26B-9635-4850-857E-A3B4073DDD6C}
+		{4CEBBA18-A1B0-4A3E-B24A-B51B75748101} = {E6E9C26B-9635-4850-857E-A3B4073DDD6C}
+		{C781CE44-E421-4100-A5DE-26B7F9173E78} = {BCCF5747-A6FE-4A5D-92CF-A57D88629873}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B63F8490-D584-37FA-81B5-E1ABBCF6147B}
+	EndGlobalSection
+EndGlobal
